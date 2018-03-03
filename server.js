@@ -38,8 +38,8 @@ var server  = http.createServer( function( req, res ) {
         res.write( 'OS CPU count ...... ' + os.cpus().length                                + '\n' ) ;
         res.write( 'OS CPU model ...... ' + os.cpus()[0].model                              + '\n' ) ;
         res.write( 'OS CPU speed: ..... ' + os.cpus()[0].speed + 'mhz'                      + '\n' ) ;
-        res.write(                                                                            '\n' ) ;
-        res.write( 'HTTP/' + req.httpVersion                                                + '\n' ) ;
+        res.write( 'HTTP Version ...... ' + req.httpVersion                                 + '\n' ) ;
+        res.write( '=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-='                                    + '\n' ) ;
         res.write(                                                                            '\n' ) ;
         res.write( 'REQUEST HEADERS:'                                                       + '\n' ) ;
         res.write( util.inspect( req.headers, null )                                        + '\n' ) ;
